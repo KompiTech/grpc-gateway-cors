@@ -1,0 +1,21 @@
+syntax = "proto3";
+option go_package = "options";
+
+package gengo.grpc.gateway.cors;
+import "google/protobuf/descriptor.proto";
+
+message CORS {
+    int32 max_age = 1;
+    bool allow_credentials = 2;
+    bool options_passthrough = 3;
+    repeated string allow_origin = 4;
+    repeated string allow_method = 5;
+    repeated string allow_header = 6;
+    repeated string expose_header = 7;
+    bool debug = 8;
+}
+
+extend google.protobuf.ServiceOptions {
+   CORS cors = 1043;
+}
+
