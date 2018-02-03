@@ -9,7 +9,7 @@ The underlying CORS implementation is [github.com/rs/cors](https://github.com/rs
 
 ## Installation
 
-`go install github.com/dan-compton/grpc-gateway-cors/protoc-gen-grpc-gateway-cors`
+`go get -u github.com/dan-compton/grpc-gateway-cors/...`
 
 ## Usage
 
