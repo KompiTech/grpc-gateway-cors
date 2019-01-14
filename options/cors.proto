@@ -1,5 +1,5 @@
 syntax = "proto3";
-option go_package = "options";
+option go_package = "github.com/dan-compton/grpc-gateway-cors/options";
 
 package gengo.grpc.gateway.cors;
 import "google/protobuf/descriptor.proto";
